@@ -15,6 +15,9 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
   // be sure to include its associated Products
+  // in order for the app to run, I need to run the command `npm run seed` and then `npm start`, in `insomnia`: http:localhost:api/categories or categories/:id
+  //The index.js file adds in the prefix /categories - but the route file won’t show it, so we have to combine them when we use insomnia
+
 });
 
 router.get('/:id', async (req, res) => {
