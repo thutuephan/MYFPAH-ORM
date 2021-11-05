@@ -10,8 +10,8 @@ router.get('/', async (req, res) => {
   try {
     const productData = await Product.findAll({
       include: [
-        {model: Category, attributes: ['id', 'category_name']}, 
-        {model: Tag, attributes: ['id', 'tag_name']}
+        { model: Category, attributes: ['id', 'category_name'] },
+        { model: Tag, attributes: ['id', 'tag_name'] }
       ]
     })
     res.status(200).json(productData);
@@ -30,8 +30,8 @@ router.get('/:id', async (req, res) => {
         id: req.params.id
       },
       include: [
-        {model: Category, attributes: ['id', 'category_name']}, 
-        {model: Tag, attributes: ['id', 'tag_name']}
+        { model: Category, attributes: ['id', 'category_name'] },
+        { model: Tag, attributes: ['id', 'tag_name'] }
       ]
     });
     if (!productData) {
@@ -61,7 +61,7 @@ router.post('/', (req, res) => {
     stock: req.body.stock,
     category_id: req.body.category_id,
     tagIds: req.body.tag_id
-  })  
+  })
     .then((product) => {
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
 
@@ -135,7 +135,7 @@ router.delete('/:id', async (req, res) => {
       }
     });
     if (!productData) {
-      res.status(400).json({message: 'No product was found with this id!'});
+      res.status(400).json({ message: 'No product was found with this id!' });
     }
     res.status(200).json(productData);
   } catch (err) {
