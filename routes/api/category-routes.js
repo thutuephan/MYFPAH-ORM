@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
       // be sure to include its associated Products
 
       include: [Product],
-     attributes: ['id', 'category_name']
+      attributes: ['id', 'category_name']
     })
     res.status(200).json(categoryData);
   } catch (err) {
@@ -26,7 +26,6 @@ router.get('/:id', async (req, res) => {
       where: {
         id: req.params.id
       },
-      // without curly braces
       include: [Product]
     });
     if (!categoryData) {
@@ -41,7 +40,6 @@ router.get('/:id', async (req, res) => {
   // be sure to include its associated Products
   // in order for the app to run, I need to run the command `npm run seed` and then `npm start`, in `insomnia`: http:localhost:api/categories or categories/:id
   //The index.js file adds in the prefix /categories - but the route file won’t show it, so we have to combine them when we use insomnia
-
 });
 
 router.post('/', async (req, res) => {
@@ -54,7 +52,6 @@ router.post('/', async (req, res) => {
   } catch (err) {
     res.status(400).json(err);
   }
-
 });
 
 router.put('/:id', async (req, res) => {
@@ -73,15 +70,13 @@ router.put('/:id', async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-
 });
-
 router.delete('/:id', async (req, res) => {
   // delete a category by its `id` value
   try {
     const categoryData = await Category.destroy({
       where: {
-      id: req.params.id
+        id: req.params.id
       }
     });
     if (!categoryData) {
@@ -92,7 +87,6 @@ router.delete('/:id', async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-
 });
 
 module.exports = router;
