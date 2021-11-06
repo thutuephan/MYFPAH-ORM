@@ -1,4 +1,4 @@
-![License Badge](https://img.shields.io/badge/license-MIT-green.svg)
+![License Badge](https://img.shields.io/badge/license-MIT-blue.svg)
 
 # MYFPAH-ORM
 E-Commerce Back End
@@ -42,7 +42,7 @@ E-Commerce Back End
   
 
 ## Screenshots
-  ![E-Commerce]()
+  ![E-Commerce](https://github.com/thutuephan/MYFPAH-ORM/blob/main/assets/Capture.PNG)
 ## Credits
   * THU PHAN  
   * Instructional Staff
