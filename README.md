@@ -14,6 +14,7 @@ E-Commerce Back End
   - [Description](#)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Demo Videos](#video)
   - [Links](#links)
   - [Screenshots](#screenshots)
   - [Credits](#credits)
@@ -35,10 +36,12 @@ E-Commerce Back End
 
 
 ## Demo Videos
-  * The URL of the GitHub repository with a unique name and a README describing the project: https://github.com/thutuephan/MYFPAH-ORM
   * [Walkthrough Video 1: How to start the application's server and run the product routes](https://watch.screencastify.com/v/Z9olinyarX00hPei9Pjg)
   * [Walkthrough Video 2: Run the category routes](https://watch.screencastify.com/v/IKMs1CIQZJad3lSuSpsO)
   * [Walkthrough Video 3: Run the tag routes](https://watch.screencastify.com/v/J8LeQJ4K9Kcp1jFhEjG0)
+## Links
+  * The URL of the GitHub repository with a unique name and a README describing the project: https://github.com/thutuephan/MYFPAH-ORM
+  
   
 
 ## Screenshots
